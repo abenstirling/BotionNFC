@@ -14,6 +14,9 @@
 		06E0A4E52B632E8C00BCA785 /* BotionNFCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0A4E42B632E8C00BCA785 /* BotionNFCTests.swift */; };
 		06E0A4EF2B632E8C00BCA785 /* BotionNFCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0A4EE2B632E8C00BCA785 /* BotionNFCUITests.swift */; };
 		06E0A4F12B632E8C00BCA785 /* BotionNFCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0A4F02B632E8C00BCA785 /* BotionNFCUITestsLaunchTests.swift */; };
+		06E0A4FE2B632F3800BCA785 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0A4FD2B632F3700BCA785 /* HomeView.swift */; };
+		06E0A5002B632FAD00BCA785 /* NFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0A4FF2B632FAD00BCA785 /* NFCUtility.swift */; };
+		06E0A5022B632FE900BCA785 /* NFCWriterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0A5012B632FE900BCA785 /* NFCWriterVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06C216672B633C55009B8F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		06E0A4CF2B632E8B00BCA785 /* BotionNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotionNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E0A4D22B632E8B00BCA785 /* BotionNFCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotionNFCApp.swift; sourceTree = "<group>"; };
 		06E0A4D42B632E8B00BCA785 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +49,9 @@
 		06E0A4EA2B632E8C00BCA785 /* BotionNFCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotionNFCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E0A4EE2B632E8C00BCA785 /* BotionNFCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotionNFCUITests.swift; sourceTree = "<group>"; };
 		06E0A4F02B632E8C00BCA785 /* BotionNFCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotionNFCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06E0A4FD2B632F3700BCA785 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		06E0A4FF2B632FAD00BCA785 /* NFCUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCUtility.swift; sourceTree = "<group>"; };
+		06E0A5012B632FE900BCA785 /* NFCWriterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriterVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +102,13 @@
 		06E0A4D12B632E8B00BCA785 /* BotionNFC */ = {
 			isa = PBXGroup;
 			children = (
-				06E0A4D22B632E8B00BCA785 /* BotionNFCApp.swift */,
-				06E0A4D42B632E8B00BCA785 /* ContentView.swift */,
-				06E0A4D62B632E8C00BCA785 /* Assets.xcassets */,
+				06C216672B633C55009B8F95 /* Info.plist */,
 				06E0A4D82B632E8C00BCA785 /* BotionNFC.entitlements */,
+				06E0A4D22B632E8B00BCA785 /* BotionNFCApp.swift */,
+				06E0A5032B63316E00BCA785 /* Views */,
+				06E0A5052B63319900BCA785 /* Utilities */,
+				06E0A5042B63318300BCA785 /* ViewModels */,
+				06E0A4D62B632E8C00BCA785 /* Assets.xcassets */,
 				06E0A4D92B632E8C00BCA785 /* Preview Content */,
 			);
 			path = BotionNFC;
@@ -127,6 +137,31 @@
 				06E0A4F02B632E8C00BCA785 /* BotionNFCUITestsLaunchTests.swift */,
 			);
 			path = BotionNFCUITests;
+			sourceTree = "<group>";
+		};
+		06E0A5032B63316E00BCA785 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06E0A4D42B632E8B00BCA785 /* ContentView.swift */,
+				06E0A4FD2B632F3700BCA785 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06E0A5042B63318300BCA785 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				06E0A5012B632FE900BCA785 /* NFCWriterVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		06E0A5052B63319900BCA785 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				06E0A4FF2B632FAD00BCA785 /* NFCUtility.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E0A4FE2B632F3800BCA785 /* HomeView.swift in Sources */,
 				06E0A4D52B632E8B00BCA785 /* ContentView.swift in Sources */,
+				06E0A5002B632FAD00BCA785 /* NFCUtility.swift in Sources */,
+				06E0A5022B632FE900BCA785 /* NFCWriterVM.swift in Sources */,
 				06E0A4D32B632E8B00BCA785 /* BotionNFCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,36 +454,49 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_ENTITLEMENTS = BotionNFC/BotionNFC.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BotionNFC/Preview Content\"";
 				DEVELOPMENT_TEAM = DHX4DPP22G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BotionNFC/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This allows the app to help you write data into your NFC tags.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = abenstirling.BotionNFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_ENTITLEMENTS = BotionNFC/BotionNFC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -461,29 +513,39 @@
 				DEVELOPMENT_TEAM = DHX4DPP22G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BotionNFC/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This allows the app to help you write data into your NFC tags.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = abenstirling.BotionNFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
