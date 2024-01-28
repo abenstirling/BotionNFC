@@ -458,7 +458,7 @@
 				CODE_SIGN_ENTITLEMENTS = BotionNFC/BotionNFC.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"BotionNFC/Preview Content\"";
 				DEVELOPMENT_TEAM = DHX4DPP22G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -466,6 +466,7 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BotionNFC/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This allows the app to help you write data into your NFC tags.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -484,7 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.6.9;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = abenstirling.BotionNFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,7 +509,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_ENTITLEMENTS = BotionNFC/BotionNFC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"BotionNFC/Preview Content\"";
 				DEVELOPMENT_TEAM = DHX4DPP22G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -516,6 +517,7 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BotionNFC/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This allows the app to help you write data into your NFC tags.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -534,7 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.6.9;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = abenstirling.BotionNFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
