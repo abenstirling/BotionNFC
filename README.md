@@ -2,4 +2,4 @@
 
 ![Alt Text](./botionnfc.gif)
 
-<a href="https://stirling.cards">Works with most NFC tags, including Botion Cards.</a>
+<a href="https://botioncards.com">Works with most NFC tags, including Botion Cards.</a>
